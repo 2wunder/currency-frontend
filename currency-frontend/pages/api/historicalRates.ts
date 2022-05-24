@@ -1,9 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import { NextApiRequest, NextApiResponse } from 'next'
-import { getDaysArray, requestedConvertedRates } from '../helpers/openExchangeResponseParser';
-import { getHistoricalApiURL } from '../helpers/urlManipulator';
-import { IHistoricalQuery } from '../types/openExchnageRequestTypes';
+import { getDaysArray, requestedConvertedRates } from '../../helpers/openExchangeResponseParser';
+import { getHistoricalApiURL } from '../../helpers/urlManipulator';
+import { IHistoricalQuery } from '../../types/openExchnageRequestTypes';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     if(req.method === "POST"){

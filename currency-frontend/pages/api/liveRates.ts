@@ -1,7 +1,7 @@
 import { NextApiRequest } from "next";
-import { requestedConvertedRates } from "../helpers/openExchangeResponseParser";
-import { getLatestApiURL } from "../helpers/urlManipulator";
-import { NextApiResponseServerIO } from "../types/next";
+import { requestedConvertedRates } from "../../helpers/openExchangeResponseParser";
+import { getLatestApiURL } from "../../helpers/urlManipulator";
+import { NextApiResponseServerIO } from "../../types/next";
 
 export default async (req: NextApiRequest, res: NextApiResponseServerIO) => {
     console.log("requested exchnage details",req.query);

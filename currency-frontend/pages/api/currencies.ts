@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import { NextApiRequest, NextApiResponse } from 'next';
-import { getCurrencySelectOptions } from '../helpers/componentDataParser';
-import { getCurrenciesApiURL } from '../helpers/urlManipulator';
+import { getCurrencySelectOptions } from '../../helpers/componentDataParser';
+import { getCurrenciesApiURL } from '../../helpers/urlManipulator';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     if(req.method === "GET"){

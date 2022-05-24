@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getCurrencies, setBaseCurrency, setTargetCurrencies } from "../../actions/currenciesAction";
-import { ICurrencyOption } from "../../types/openExchangeResponseTypes";
-import { IApplicationState } from "../../types/stateTypes";
+import { getCurrencies, setBaseCurrency, setTargetCurrencies } from "../../../actions/currenciesAction";
+import { ICurrencyOption } from "../../../types/openExchangeResponseTypes";
+import { IApplicationState } from "../../../types/stateTypes";
 import { MultiSelect } from "react-multi-select-component";
-import { BASE_CURRENCY_LABEL, SELECT_BASE_CURRENCY, SELECT_TARGETS, TARGET_CURRENCIES_LABEL } from "../../constants/labels";
-import { getTargetCurrenciesFromOptions, getTargetCurrenciesFromValues } from "../../helpers/componentDataParser";
-import BaseCurrencySelectorComponent from "../../common/baseCurrencySelector/baseCurrencySelectorComponent";
-import { getLiveExchangeRates } from "../../actions/liveExchangeAction";
+import { BASE_CURRENCY_LABEL, SELECT_BASE_CURRENCY, SELECT_TARGETS, TARGET_CURRENCIES_LABEL } from "../../../constants/labels";
+import { getTargetCurrenciesFromOptions, getTargetCurrenciesFromValues } from "../../../helpers/componentDataParser";
+import BaseCurrencySelectorComponent from "../../../common/baseCurrencySelector/baseCurrencySelectorComponent";
+import { getLiveExchangeRates } from "../../../actions/liveExchangeAction";
 
 const CurrencySelectorComponent:React.FC = ()=>{
     const dispatch = useDispatch();

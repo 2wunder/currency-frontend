@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "./common/navigation/navigationComponent";
-import { WELCOME_MESSAGE } from "./constants/labels";
+import Navigation from "../common/navigation/navigationComponent";
+import { WELCOME_MESSAGE } from "../constants/labels";
 
 // component
 const Index: React.FC = () => {

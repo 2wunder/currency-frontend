@@ -1,9 +1,9 @@
 import {  useMemo } from "react";
 import {  useSelector } from "react-redux";
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { CURRENCY_LIVE_RATES } from "../../../constants/labels";
-import { getLiveChartData } from "../../../helpers/componentDataParser";
-import { IApplicationState } from "../../../types/stateTypes";
+import { CURRENCY_LIVE_RATES } from "../../../../constants/labels";
+import { getLiveChartData } from "../../../../helpers/componentDataParser";
+import { IApplicationState } from "../../../../types/stateTypes";
 
 const LiveExchangeRatesComponent: React.FC = () => {
   const latestRates = useSelector((state:IApplicationState)=>state.liveData);

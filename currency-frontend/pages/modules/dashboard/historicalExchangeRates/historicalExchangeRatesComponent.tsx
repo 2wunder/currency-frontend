@@ -2,12 +2,12 @@ import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import DatePicker from "react-datepicker";
-import { getHistoricalExchangeRates } from "../../../actions/historicalExchangeAction";
-import { getHistoricalChartData, getRandomColor } from "../../../helpers/componentDataParser";
-import { IApplicationState } from "../../../types/stateTypes";
+import { getHistoricalExchangeRates } from "../../../../actions/historicalExchangeAction";
+import { getHistoricalChartData, getRandomColor } from "../../../../helpers/componentDataParser";
+import { IApplicationState } from "../../../../types/stateTypes";
 import "react-datepicker/dist/react-datepicker.css";
-import { DATE_FORMAT_FOR_HISTORICAL_RATES } from "../../../constants/formats";
-import { getLiveExchangeRates } from "../../../actions/liveExchangeAction";
+import { DATE_FORMAT_FOR_HISTORICAL_RATES } from "../../../../constants/formats";
+import { getLiveExchangeRates } from "../../../../actions/liveExchangeAction";
 
 const HistoricalExchangeRatesComponent:React.FC = ()=>{
     const base = useSelector((state:IApplicationState)=>state.exchange.base);

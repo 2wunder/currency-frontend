@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { CurrencyInputComponent } from "../../common/currencyInput/currencyInputComponent";
-import { IApplicationState } from "../../types/stateTypes";
+import { CurrencyInputComponent } from "../../../common/currencyInput/currencyInputComponent";
+import { IApplicationState } from "../../../types/stateTypes";
 
 const ConverterComponent:React.FC = ()=>{
     const base = useSelector((state:IApplicationState)=>state.exchange.base);
@@ -43,7 +43,7 @@ const ConverterComponent:React.FC = ()=>{
                 />
             </div>
         }
-        {targets && targets.map((v,i)=><div className="flex-item-left">
+        {targets && targets.map((v,i)=><div key={i} className="flex-item-left">
                                             <CurrencyInputComponent 
                                                 changeHandler={targetCurrencyValueChange}
                                                 currency={v}

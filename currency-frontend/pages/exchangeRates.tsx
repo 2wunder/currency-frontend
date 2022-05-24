@@ -1,5 +1,5 @@
 import ConverterComponent from "./modules/converter/converterComponent";
-import Navigation from "./common/navigation/navigationComponent";
+import Navigation from "../common/navigation/navigationComponent";
 import CurrencySelectorComponent from "./modules/currencySelector/currencySelectorComponent";
 
 const ExchangeRatesComponent:React.FC = ()=>{

@@ -8,7 +8,12 @@ import { IApplicationState } from "./types/stateTypes";
 // initial states here
 const initalState:IApplicationState = {
     historicalData:{},
-    liveData:{}
+    liveData:{},
+    exchange:{
+      currencies:[],
+      base:null,
+      targets:[]
+    }
 };
 
 // middleware
