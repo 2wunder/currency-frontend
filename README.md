@@ -20,11 +20,12 @@ free Sign up for free tier https://openexchangerates.org/signup/free.
 
 #### Non functional requirements:
 - The app should have certain optimization levels concerning querying/data fetching.  
-- Implement the necessary logic/wrapper to cover the limitation of the free plan provided by `currencylayer-client`.
+- Implement the necessary logic/wrapper to cover the limitation of the free plan.
 
 ## your stack
 
-Try to use a modern JS stack, e.g. React or Vue. You can use any boilerplate or framework you like, for React we recommend create-react-app or next.js, for Vue you could for instance use nuxt.js. If you prefer it this way, you can sprinkle your code with some typescript, but this is not a must.
+Try to use a modern JS stack, e.g. React or Vue. You can use any boilerplate or framework you like, for React we recommend create-react-app or next.js. 
+Using TypeScript is highly recomended.
 
 ## optionals
 
