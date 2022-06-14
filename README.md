@@ -7,9 +7,8 @@ We would like to have an overview of the last two weeks conversion rates in a gr
 
 ## Currency rates
 
-Please use https://openexchangerates.org/ to retrieve raw currency rates.
-You may simply consume the web service or a use a client library e.g: https://www.npmjs.com/package/open-exchange-rates. 
-Sign up for free tier https://openexchangerates.org/signup/free.
+You can use 3rd party APIs like https://openexchangerates.org/ or https://apilayer.com/marketplace/currency_data-api to retrieve raw currency rates.
+You may simply consume the REST API or use an NPM package that that wraps it.
 
 ## Requirements
 
@@ -25,7 +24,7 @@ Sign up for free tier https://openexchangerates.org/signup/free.
 
 ## Your stack
 
-Try to use a modern JS stack, e.g. React or Vue. You can use any boilerplate or framework you like, for React we recommend create-react-app or next.js. 
+Try to use a modern JS stack, e.g. React or Vue. You can use any boilerplate or framework you like.
 Using TypeScript is highly recomended.
 
 ## Optionals
